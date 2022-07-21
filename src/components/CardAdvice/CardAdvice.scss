@@ -1,10 +1,4 @@
-.container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+
 .card {
   border-radius: 11px;
   padding: 3px;
@@ -15,12 +9,35 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: hsl(217, 19%, 38%);
+  background-color: hsl(217, 19%, 24%);
+  padding: 23px;
+  position: relative;
+  font-weight: 700;
 }
 .card-title {
   color: hsl(150, 100%, 66%);
+  letter-spacing: 4px;
+  font-size: 14px;
 }
 .card-advice {
   color: hsl(193, 38%, 86%);
   font-size: 28px;
+}
+.card-patternDivider {}
+.card-dice {
+  color: hsl(150, 100%, 66%);
+  position: absolute;
+  top: 32%;
+  left: 30%;
+}
+.card-circle {
+  display: block;
+  background: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  position: absolute;
+  top: 91%;
+  left: 44.5%;
 }
