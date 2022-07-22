@@ -1,43 +1,47 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
 
 .card {
-  border-radius: 11px;
-  padding: 3px;
-  height: 30%;
-  width: 27%;
+  border-radius: 16px;
+  padding: 23px;
+  padding-bottom: 40px;
+  height: 35%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: hsl(217, 19%, 24%);
-  padding: 23px;
+  background-color: $grey;
   position: relative;
   font-weight: 700;
 }
-.card-title {
-  color: hsl(150, 100%, 66%);
+.card__title {
+  color: $green;
   letter-spacing: 4px;
   font-size: 14px;
 }
-.card-advice {
-  color: hsl(193, 38%, 86%);
+.card__advice {
+  color: $light-grey;
   font-size: 28px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
-.card-patternDivider {}
-.card-dice {
-  color: hsl(150, 100%, 66%);
+.card__dice {
   position: absolute;
-  top: 32%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.card-circle {
+.card__circle {
   display: block;
-  background: hsl(150, 100%, 66%);
+  background: $green;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 64px;
+  width: 64px;
   margin: 0;
   position: absolute;
-  top: 91%;
-  left: 44.5%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
