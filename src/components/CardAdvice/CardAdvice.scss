@@ -3,10 +3,6 @@
 
 .card {
   border-radius: 16px;
-  padding: 23px;
-  padding-bottom: 40px;
-  height: 35%;
-  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -15,18 +11,56 @@
   background-color: $grey;
   position: relative;
   font-weight: 700;
+
+  @include mq-desktop {
+    height: 29%;
+    width: 27%;
+    padding: 23px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+  }
+
+  @include mq-mobile {
+    height: 45%;
+    width: 88%;
+    padding: 6px;
+    padding-bottom: 35px;
+    margin-bottom: 115px;
+  }
 }
 .card__title {
   color: $green;
   letter-spacing: 4px;
   font-size: 14px;
+
+  @include mq-mobile {
+    font-size: 11px;
+  }
 }
 .card__advice {
   color: $light-grey;
-  font-size: 28px;
-  padding-left: 25px;
-  padding-right: 25px;
+
+  @include mq-desktop {
+    padding: 0px 27px;
+    font-size: 28px;
+  }
+
+  @include mq-mobile {
+    padding: 0px 12px;
+    font-size: 25px;
+  }
 }
+.card__patternDivider {
+  @include mq-mobile {
+    display: none;
+  }
+}
+.card__patternDividerSmall {
+  @include mq-desktop {
+    display: none;
+  }
+}
+
 .card__dice {
   position: absolute;
   top: 50%;

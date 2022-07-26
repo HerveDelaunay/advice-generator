@@ -5,7 +5,7 @@
 }
 
 @mixin mq-desktop {
-  @media screen and (max-width: $mq-desktop) {
+  @media screen and (min-width: $mq-desktop) {
     @content;
   }
 }
