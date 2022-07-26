@@ -67,8 +67,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card__circle {
+.card__button {
   display: block;
+  border: none;
   background: $green;
   border-radius: 50%;
   height: 64px;
@@ -78,4 +79,7 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.card__button:hover {
+  box-shadow: 0 0 4em 0 $green;
 }
