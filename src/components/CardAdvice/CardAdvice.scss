@@ -1,0 +1,85 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+.card {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: $grey;
+  position: relative;
+  font-weight: 700;
+
+  @include mq-desktop {
+    height: 32%;
+    width: 30%;
+    padding: 23px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+  }
+
+  @include mq-mobile {
+    height: 45%;
+    width: 88%;
+    padding: 6px;
+    padding-bottom: 35px;
+    margin-bottom: 115px;
+  }
+}
+.card__title {
+  color: $green;
+  letter-spacing: 4px;
+  font-size: 14px;
+
+  @include mq-mobile {
+    font-size: 11px;
+  }
+}
+.card__advice {
+  color: $light-grey;
+
+  @include mq-desktop {
+    padding: 0px 27px;
+    font-size: 28px;
+  }
+
+  @include mq-mobile {
+    padding: 0px 12px;
+    font-size: 25px;
+  }
+}
+.card__patternDivider {
+  @include mq-mobile {
+    display: none;
+  }
+}
+.card__patternDividerSmall {
+  @include mq-desktop {
+    display: none;
+  }
+}
+
+.card__dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__button {
+  display: block;
+  border: none;
+  background: $green;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__button:hover {
+  box-shadow: 0 0 4em 0 $green;
+}

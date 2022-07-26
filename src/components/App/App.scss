@@ -1,0 +1,15 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+html,body {
+  margin: auto;
+}
+
+.App {
+  height: 100vh;
+  background-color: $black;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
