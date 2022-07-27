@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './CardAdvice.scss'
 import patternDivider from '../../assets/pattern-divider-desktop.svg'
 import patternDividerSmall from '../../assets/pattern-divider-mobile.svg'
@@ -21,6 +21,11 @@ const CardAdvice: React.FC = () => {
       console.error(error)
     }
   }
+  
+  useEffect (() => {
+    handleClick()
+  }, [])
+
   return (
     <div className='card'>
       <div className='card__title'>ADVICE #{adviceNumber}</div>
