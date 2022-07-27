@@ -17,11 +17,13 @@
 
 This app generates wise advices every time you click on the dice button. It is fully responsive.
 
+Check it out here : https://advice-generator-hdln.surge.sh/
+
 ### What it looks like
 
 ![](./src/assets/desktop-active-state.png)
 
-### How to run the app ? 
+### How to run the app locally ? 
 
 Clone the project, then jump into your command line and run these :
 
