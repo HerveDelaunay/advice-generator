@@ -17,7 +17,7 @@
 
 This app generates wise advices every time you click on the dice button. It is fully responsive.
 
-Check it out here : https://advice-generator-hdln.surge.sh/
+Check it out here : https://advice-generator-v2.surge.sh/
 
 ### What it looks like
 
