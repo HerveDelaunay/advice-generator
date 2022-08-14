@@ -27,6 +27,14 @@
     padding-bottom: 35px;
     margin-bottom: 115px;
   }
+
+  @include mq-tablet {
+    height: 45%;
+    width: 55%;
+    padding: 6px;
+    padding-bottom: 35px;
+    margin-bottom: 115px;
+  }
 }
 .card__title {
   color: $green;
@@ -34,6 +42,9 @@
   font-size: 14px;
 
   @include mq-mobile {
+    font-size: 11px;
+  }
+  @include mq-tablet {
     font-size: 11px;
   }
 }
@@ -49,9 +60,17 @@
     padding: 0px 12px;
     font-size: 25px;
   }
+
+  @include mq-tablet {
+    padding: 0px 12px;
+    font-size: 25px;
+  }
 }
 .card__patternDivider {
   @include mq-mobile {
+    display: none;
+  }
+  @include mq-tablet {
     display: none;
   }
 }

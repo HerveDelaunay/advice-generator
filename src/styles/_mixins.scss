@@ -3,7 +3,11 @@
     @content;
   }
 }
-
+@mixin mq-tablet {
+  @media screen and (min-width: $mq-mobile) and (max-width: $mq-desktop) {
+    @content;
+  }
+}
 @mixin mq-desktop {
   @media screen and (min-width: $mq-desktop) {
     @content;
